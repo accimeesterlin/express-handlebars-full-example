@@ -47,6 +47,32 @@ app.get('/dashboard', (req, res) => {
 });
 
 
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        people: [
+            "James",
+            "Peter",
+            "Sadrack",
+            "Morissa"
+        ], 
+        user: {
+            username: 'accimeesterlin',
+            age: 20,
+            phone: 4647644
+        },
+
+        lists: [
+            {
+                items: ['Mango', 'Banana', 'Pineapple']
+            },
+
+            {
+                items: ['Potatoe', 'Manioc', 'Avocado']
+            }
+        ]
+    });
+});
+
 app.listen(8080, () => {
     console.log('Server is starting at port ', 8080);
 });
