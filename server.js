@@ -32,6 +32,21 @@ app.get('/about', (req, res) => {
 
 
 
+app.get('/dashboard', (req, res) => {
+
+    res.render('dashboard', {
+        isListEnabled: true,
+        author: {
+            firstName: 'Peter',
+            lastName: 'James',
+            project: {
+                name: 'Build Random Quote'
+            }
+        }
+    });
+});
+
+
 app.listen(8080, () => {
     console.log('Server is starting at port ', 8080);
 });
