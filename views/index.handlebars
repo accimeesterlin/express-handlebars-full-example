@@ -14,6 +14,8 @@
 {{/if}}
 
 
+
+
 {{#if isAgeEnabled}}
     <p> I am {{age}}</p>
 
@@ -25,5 +27,19 @@
 {{/if}}
 
 
+{{calculation 50}}
+
+{{!-- This is a listing --}}
+{{#list people}}
+  {{firstName}} {{lastName}}
+{{/list}}
 
 {{> footer}}
+
+
+
+
+{{! This is just a test}}
+{{{ test  }}}
+
+{{ test }}

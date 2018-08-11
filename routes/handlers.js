@@ -9,7 +9,14 @@ router.get('/', (req, res) => {
         name: 'Esterling Accime',
         age: 5,
         isDisplayName: true,
-        isAgeEnabled: true
+        isAgeEnabled: true,
+        people: [
+            {firstName: "Yehuda", lastName: "Katz"},
+            {firstName: "Carl", lastName: "Lerche"},
+            {firstName: "Alan", lastName: "Johnson"}
+        ],
+
+        test: '<h3>Welcome to New Orlands</h3>',
     });
 });
 
