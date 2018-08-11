@@ -13,12 +13,21 @@ app.set('view engine', 'handlebars');
 
 // Routing 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {
+        title: 'Home Page',
+        name: 'Esterling Accime',
+        age: 5,
+        isDisplayName: true,
+        isAgeEnabled: true
+    });
 });
 
 
 app.get('/about', (req, res) => {
-    res.render('about');
+    res.render('about', {
+        title: 'About Me',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eligendi eius! Qui'
+    });
 });
 
 
