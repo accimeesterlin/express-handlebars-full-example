@@ -7,6 +7,7 @@ router.get('/', (req, res) => {
     res.render('index', {
         title: 'Home Page',
         name: 'Esterling Accime',
+        style:  'home.css',
         age: 5,
         isDisplayName: true,
         isAgeEnabled: true,
@@ -24,6 +25,7 @@ router.get('/', (req, res) => {
 router.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
+        style:  'about.css',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eligendi eius! Qui'
     });
 });
@@ -34,6 +36,7 @@ router.get('/dashboard', (req, res) => {
 
     res.render('dashboard', {
         isListEnabled: true,
+        style:  'dashboard.css',
         author: {
             firstName: 'Peter',
             lastName: 'James',
