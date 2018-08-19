@@ -10,7 +10,7 @@ Express Handlebars is a power view engine that allows you to build semantic temp
  - Express-handlebars
 
 
- #### Content Video
+ #### Videos
 Title  | Video
 ------------------------------------ | -------------
 Get started with Express handlebars  | [Video](https://www.youtube.com/watch?v=erfN7fH7A6s&t=4s&index=2&list=PLurIMwd6GdCi3ssXNAcjZ2l5mYaTfYPhf)
